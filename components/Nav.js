@@ -8,6 +8,7 @@ import { subsidiaries } from './Data';
 const Nav = () => {
   const [menu, setmenu] = useState(true)
   const [set_subdidiaries, show_subsidiaries] =  useState(false)
+  const [set_first_subdidiaries, show_first_subsidiaries] =  useState(false)
 
 
 
@@ -71,13 +72,13 @@ const handle_menu=()=>{
                 <Link href={"/abs_nyark/shimoks"}><p className='text-resp text-white w-auto md:hover:text-lg hover:font-thin duration-500 font-thin font-[Montserrat] md:text-resp2 lg:text-[1em]'>Intro</p></Link> 
                   </li>
 
-                  <li className=' md:w-auto md:hover:border-l-[1vw] md:hover:border-[orange] duration-300  ' onMouseEnter={()=> {handle_menu()}}  >
+                  <li className=' md:w-auto md:hover:border-l-[1vw] md:hover:border-[orange] duration-300 z-[1000] ' onMouseEnter={()=> {handle_menu()}} onClick={()=>{show_subsidiaries(!set_subdidiaries)}} >
                         <div className='flex items-center justify-evenly md:gap-[4px]'>
                               <p  className='text-resp text-white w-auto md:hover:text-lg md:hover:font-thin duration-500 font-thin font-[Montserrat] md:text-resp2 lg:text-[1em]' >Our Subsidiaries</p>
                               <FontAwesomeIcon icon={faCubesStacked} size='sm' />
-                              <p className='bg-[white] text-[black] text-center rounded-[10vw] px-[8px] '>4</p>
+                              <p className='bg-[white] text-[black] text-center rounded-[10vw] px-[8px] '>{subsidiaries.length}</p>
                         </div>
-                          {set_subdidiaries && <ul onMouseLeave={()=>{show_subsidiaries(false)}} className='w-auto mt-[1em] md:mt-[0px] flex flex-col gap-[10px] border-l-4 px-[1em] border-indigo-500  md:absolute top-[70px] '>
+                          {set_subdidiaries && <ul onMouseLeave={()=>{show_subsidiaries(false)}} className='  w-auto mt-[1em] md:mt-[0px] flex flex-col gap-[10px] border-l-4 md:border-l-0 md:border-b-4 px-[1em] border-indigo-500  md:absolute top-[20px] md:py-[2vw] '>
                           {subsidiaries.map((each_subsidiary, index)=>{
                             return<Link  key={index} href={"/"}><  li   className=' md:bg-[#1F1D53] md:shadow md:px-[20px] md:py-[6px] font-thin text-[0.8em]  md:text-[1em]'><p className='hover:border-l-4 border-[orange] duration-200'>{each_subsidiary.company_name}</p></li></Link>
                           })}

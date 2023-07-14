@@ -6,7 +6,25 @@
     body{
         all:unset;
         box-sizing: border-box;
+        
     }
+
+
+    p,h1,h2,h3,h4,h5{
+        cursor: pointer;
+    }
+    .small_words{
+        overflow: hidden;
+    }
+
+    .small_words p{
+        max-width: 30ch;
+        
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+    }
+
     
     /* *{
       

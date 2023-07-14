@@ -84,7 +84,7 @@ const Contact = () => {
     <div  style={{backgroundImage:`url(/secondary_bg.jpg)` , backgroundPosition:"center", backgroundSize:"cover"}} className='text-white   font-Montserrat font-thin w-full bg-[#1E1C59] py-[2em]  px-[3vw] ' >
     
        
-            <form className= ' w-[80%] md:w-1/3   mx-auto flex flex-col gap-[1vw] md:gap-[1vw] 2xl:gap-[5px]  mt-[10em] '>
+            <form className= ' w-[80%] md:w-1/3   mx-auto flex flex-col gap-[1vw] md:gap-[1vw] 2xl:gap-[5px]  mt-[5em] '>
 
                         
                         <p className='text-center text-[10vw]  md:text-center md:text-[6vw]  duration-500 hover:text-[orange]   hover:tracking-[.1em]  w-[100%] mx-auto font-bold 2xl:text-[90px]'>CONTACT </p>

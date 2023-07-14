@@ -50,10 +50,10 @@ const Sectors = () => {
                               
 
                               {current !== index ? 
-                              <div> 
+                              <div className='small_words '> 
                                   <p className=''>{each_sector.company_name}</p>
-                              <p id="short_dec" className='font-thin text-[0.6em] max-w-[80ch]  text-ellipsis whitespace-wrap '>{each_sector.details}</p>
-                              
+                              <p id="short_dec" className='font-thin text-[0.6em] '>{each_sector.details}</p>
+                              <p id="short_dec" className='font-bold text-[orange] text-[0.6em] '>READ MORE</p>
                               </div> : <></> }
                             
                             </div>

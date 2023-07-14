@@ -22,7 +22,7 @@ const Intro = () => {
                                 ></Image>
                     </div>
 
-                    <div className='bg-[#19176C] md:px-[3em] px-[6vw] py-[8vw] md:py-[4vw] 2xl:py-[3vw] 2xl:px-[3vw] absolute right-[0px] md:right-[-5vw] top-[15vw] rounded-br-[7vw] w-[60vw] md:w-[30vw]  max-w-[450px] max-h-[700px]   '>
+                    <div className='bg-[#19176C] md:px-[3em] px-[6vw] py-[8vw] md:py-[4vw] 2xl:py-[3vw] 2xl:px-[3vw] absolute right-[0px] md:right-[-5vw] top-[20vw] rounded-br-[7vw] w-[60vw] md:w-[30vw]  max-w-[450px] max-h-[700px]   '>
                                 <FontAwesomeIcon  icon={faCubesStacked} color='white' className='absolute right-[2em]  w-[2em] h-[2em]' />
                     
                                     <h1 className='font-light text-[5vw] md:text-[3vw]  leading-[1.5vw]'>We </h1>
@@ -58,7 +58,7 @@ const Intro = () => {
                         
                     </div>
                                        
-                    <p className='  absolute right-0 w-[60%]  text-justify     md:w-[80%]  border-l-[0.5em] md:px-[1em] md:border-l-0   text-[2vw] md:text-[0.8vw] font-thin md:ml-[3em] w-full leading-[2em] '>With a global presence, Our Company is recognized for its excellence, adaptability, and commitment to creating positive change.  Today, it stands as a powerhouse conglomerate, shaping industries and leading the way in innovation and sustainability.</p>
+                    <p className='  absolute right-0 w-[55vw]  text-left     md:w-[80%]  border-l-[0.5em] md:px-[1em] md:border-l-0   text-[2vw] md:text-[0.8vw] font-thin md:ml-[3em] w-full leading-[2em] '>With a global presence, Our Company is recognized for its excellence, adaptability, and commitment to creating positive change.  Today, it stands as a powerhouse conglomerate, shaping industries and leading the way in innovation and sustainability.</p>
 
                 </div>
 
