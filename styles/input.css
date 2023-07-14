@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    body{
+        all:unset;
+        box-sizing: border-box;
+    }
+    
+    /* *{
+      
+        border:1px solid blue;
+        
+    } */
+ /* #main_body{
+        
+        background-image: url("/background.jpg");
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }  */
+
+    .grad_circle{
+        background: linear-gradient(180deg, #FFBB54 0%, rgba(255, 187, 84, 0.00) 100%);
+
+    }
+
+    /* .unset{
+        all:unset;
+        font-size: 500px;
+    } */
+}
